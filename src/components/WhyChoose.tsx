@@ -38,7 +38,7 @@ const WhyChoose = () => {
     <section id="why-choose" className="py-20 bg-gradient-to-b from-secondary to-background">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-foreground">
-          Por que escolher a Edimotors?
+          Por que escolher a Edimotores?
         </h2>
         <div className="h-1 w-24 bg-accent mx-auto mb-16"></div>
 

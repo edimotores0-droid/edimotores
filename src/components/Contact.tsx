@@ -116,7 +116,7 @@ const Contact = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Localização Edimotors"
+              title="Localização Edimotores"
             />
           </div>
         </div>

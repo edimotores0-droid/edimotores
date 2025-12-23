@@ -6,7 +6,7 @@ import carLogo from "@/assets/car-logo.png";
 
 const Hero = () => {
   const whatsappNumber = "5521970611681";
-  const whatsappMessage = "Olá! Gostaria de agendar um serviço na Edimotors.";
+  const whatsappMessage = "Olá! Gostaria de agendar um serviço na Edimotores.";
   
   const handleWhatsAppClick = () => {
     window.open(
@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
-          alt="Mecânico Edimotors"
+          alt="Mecânico Edimotores"
           className="w-full h-full object-cover object-[center_15%] md:object-[center_25%]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/98 via-primary/95 to-primary/85" />
