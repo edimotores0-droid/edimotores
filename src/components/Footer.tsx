@@ -1,4 +1,5 @@
 import { Phone, MessageSquare, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,18 +9,28 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4">Edimotors</h3>
-            <p className="text-primary-foreground/80 leading-relaxed">
-              30 anos de experiência, tecnologia e confiança ao seu lado.
+            <h3 className="text-2xl font-bold mb-4">Edimotores</h3>
+            <p className="text-primary-foreground/80">
+              30 anos de experiência e confiança.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4 text-lg">Contato</h4>
+            <h4 className="font-semibold mb-4">Navegação</h4>
+            <div className="space-y-2">
+              <Link to="/" className="block text-primary-foreground/80 hover:text-accent transition-colors">Início</Link>
+              <Link to="/servicos" className="block text-primary-foreground/80 hover:text-accent transition-colors">Serviços</Link>
+              <Link to="/sobre" className="block text-primary-foreground/80 hover:text-accent transition-colors">Sobre</Link>
+              <Link to="/contato" className="block text-primary-foreground/80 hover:text-accent transition-colors">Contato</Link>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="font-semibold mb-4">Contato</h4>
             <div className="space-y-3 text-primary-foreground/80">
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                <span>(21) 982486091</span>
+                <span>(21) 97061-1681</span>
               </div>
               <div className="flex items-center gap-2">
                 <MessageSquare className="w-4 h-4" />
@@ -31,21 +42,10 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
-          <div>
-            <h4 className="font-semibold mb-4 text-lg">Horário</h4>
-            <div className="space-y-2 text-primary-foreground/80">
-              <p>Segunda a Sexta: 8h às 18h</p>
-              <p>Sábado: 8h às 13h</p>
-              <p className="mt-4 text-accent font-semibold">
-                Atendimento pelo WhatsApp 24/7
-              </p>
-            </div>
-          </div>
         </div>
 
         <div className="border-t border-primary-foreground/20 pt-8 text-center text-primary-foreground/60">
-          <p>© {currentYear} Edimotors - Mecânica Edimilson. Todos os direitos reservados.</p>
+          <p>© {currentYear} Edimotores. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

@@ -1,5 +1,4 @@
-import { MessageSquare } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import whatsappLogo from "@/assets/whatsapp.png";
 
 const FloatingWhatsApp = () => {
   const handleWhatsAppClick = () => {
@@ -10,13 +9,16 @@ const FloatingWhatsApp = () => {
   };
 
   return (
-    <Button
+    <button
       onClick={handleWhatsAppClick}
-      className="fixed bottom-6 right-6 z-50 h-14 w-14 rounded-full shadow-hover bg-[#25D366] hover:bg-[#20BD5A] text-white p-0 animate-fade-in"
-      size="icon"
+      className="fixed bottom-6 right-6 z-50 h-20 w-20 bg-transparent p-0 border-none cursor-pointer hover:scale-110 transition-transform duration-300 animate-fade-in focus:outline-none"
     >
-      <MessageSquare className="h-6 w-6" />
-    </Button>
+      <img 
+        src={whatsappLogo} 
+        alt="WhatsApp" 
+        className="h-full w-full object-contain drop-shadow-2xl" 
+      />
+    </button>
   );
 };
 

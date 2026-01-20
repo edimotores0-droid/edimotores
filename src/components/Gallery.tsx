@@ -8,7 +8,7 @@ const Gallery = () => {
   const images = [
     {
       url: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&h=600&fit=crop",
-      alt: "Oficina Edimotors - Área de trabalho",
+      alt: "Oficina Edimotores - Área de trabalho",
     },
     {
       url: "https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=800&h=600&fit=crop",
